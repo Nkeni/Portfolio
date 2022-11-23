@@ -263,7 +263,7 @@ main {
     justify-content: center;
 
     .container {
-      min-height: 80vh;
+      min-height: 100vh;
       //padding: 4rem 2rem;
       display: grid;
       width: 80vw;
@@ -272,9 +272,9 @@ main {
       gap: 0.5rem;
 
       .left img {
-        height: 80vh;
-        width: auto;
-        border-radius: 5rem;
+        height: auto;
+        width: 90%;
+        border-radius: 50%;
       }
 
       .right {
@@ -329,7 +329,7 @@ main {
       min-height: 80vh;
       gap: 6rem;
       display: grid;
-      width: 80vw;
+      width: 100vw;
       grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
       place-items: center;
 
