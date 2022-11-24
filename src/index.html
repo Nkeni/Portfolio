@@ -9,6 +9,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 <script
       src="https://kit.fontawesome.com/be1394bc36.js"
       crossorigin
@@ -59,9 +62,9 @@
 <!-- about page -->
       <section class="about-me" id="about">
 <div class="container">
-  <div class="left"><img src="./images/aggie.jpg" alt=""></div>
-  <div class="right">
-    <div class="about">
+
+ <div class="content">
+ <div class="me">
       <h4>About me</h4>
       <p class="one">
         I am an ambitious and hardworking person. I love and enjoy
@@ -78,8 +81,9 @@
         myself as a competitive Web Developer after I complete this
         training.
       </p>
+    </div>
+    <div class="my-image"><img src="./images/aggie.jpg" alt=""></div>
   </div>
-</div>
 </div>
       </section>
       <!-- Project page -->
@@ -89,53 +93,57 @@
 
       <!-- contact page -->
       <section class="my-contact" id="contact">
-        <div class="contact-box">
-          <div class="contact-left"><h3>Send message</h3>
+
+        <div class="contact-container">
+
+          <div class="contact-content">
+          <div class="left">
+            <h3>Send message</h3>
             <form action="https://formspree.io/f/xdojvoya"
             method="POST">
               <div class="input-row">
                 <div class="input-group">
-                  <label for="">Name</label>
+                  <label hidden for="">Name</label>
                   <input type="text" name="name" placeholder="Your name">
                 </div>
 
                 <div class="input-group">
-                  <label for="">Phone</label>
+                  <label hidden for="">Phone</label>
                   <input type="number" name="number" placeholder="Your phone number">
                 </div>
               </div>
 
               <div class="input-row">
                 <div class="input-group">
-                  <label for="">Email</label>
+                  <label hidden for="">Email</label>
                   <input type="email" name="email" placeholder="Your email">
                 </div>
 
-                <label for="">Message</label>
+                <label hidden for="">Message</label>
                 <textarea rows="5" placeholder="Your message"></textarea>
               </div>
               <button type="submit">Send</button>
             </form>
-          </div>
-          <div class="contact-right"><h3>Reach me</h3>
+             </div>
+             <div class="right">
+              <h3>Reach me</h3>
             <table>
               <tr>
                 <td>Email</td>
-                <td>agatha@aims.ac.tz</td>
+                <td>:agatha@aims.ac.tz</td>
               </tr>
 
               <tr>
                 <td>Phone</td>
-                <td>+358417443525</td>
+                <td>:+358417443525</td>
               </tr>
 
               <tr>
                 <td>Address</td>
-                <td>Koksche str31, 49080 Osnabrück, Germany</td>
+                <td>:Koksche str31, 49080 Osnabrück, Germany</td>
               </tr>
             </table>
-          </div>
-        </div>
+             </div>
       </section>
     </main>
     <footer><div class="copyright">&copy;Agatha A Msola. August,2022</div>

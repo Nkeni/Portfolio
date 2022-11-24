@@ -177,8 +177,9 @@ main {
       }
 
       h2 span {
-        color: red;
+        color: black;
         font-weight: bolder;
+        font-family: "Abril Fatface", cursive;
       }
     }
 
@@ -258,45 +259,53 @@ main {
 
   .about-me {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     .container {
+      width: 100vw;
       min-height: 100vh;
-      //padding: 4rem 2rem;
-      display: grid;
-      width: 80vw;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      place-items: center;
-      gap: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 1rem;
 
-      .left img {
-        height: auto;
-        width: 90%;
-        border-radius: 50%;
-      }
+      .content {
+        width: 85%;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 3rem;
+        justify-content: center;
+        align-items: center;
 
-      .right {
-        padding: 2em;
-        background-color: cornsilk;
-        border-top-right-radius: 5rem;
-        border-bottom-left-radius: 5rem;
-
-        h4 {
-          font-family: "Lobster", cursive;
-          font-size: 2rem;
-          text-align: center;
-          margin-bottom: 1rem;
-        }
-
-        p {
-          font-size: 1.6rem;
+        .me {
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+          background-color: cornsilk;
+          padding: 5rem;
           text-align: justify;
+
+          h4 {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+
+            font-family: "Abril Fatface", cursive;
+          }
+
+          .one {
+            margin-bottom: 0.5rem;
+          }
         }
 
-        .one {
-          margin-bottom: 1rem;
+        .my-image {
+          width: 100%;
+          margin: auto;
+
+          img {
+            width: 100%;
+            height: auto;
+            border: 5px solid orange;
+            border-radius: 1rem;
+          }
         }
       }
     }
@@ -309,6 +318,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(241, 233, 203);
 
     h2 {
       color: red;
@@ -325,95 +335,80 @@ main {
     justify-content: center;
     align-items: center;
 
-    .contact-box {
-      min-height: 80vh;
-      gap: 6rem;
-      display: grid;
+    .contact-container {
       width: 100vw;
-      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-      place-items: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
 
-      .contact-left {
-        width: 40vw;
-        height: 40vh;
-        padding: 40px 60px;
-        background-color: white;
+      .contact-content {
+        width: 60%;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        justify-content: center;
+        align-items: center;
 
-        h3 {
-          margin-bottom: 2rem;
-          font-size: 2rem;
+        .left {
+          box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.4);
+          padding: 3rem;
+          text-align: justify;
+
+          h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-family: "Abril Fatface", cursive;
+          }
+
+          input,
+          textarea {
+            width: 100%;
+            border-style: hidden;
+            border-bottom: 3px solid rgb(207, 178, 61);
+            margin-bottom: 0.5rem;
+            padding: 0.5rem;
+            outline-style: none;
+          }
+
+          button {
+            width: 50px;
+            height: 30px;
+            border-radius: 1rem;
+          }
+
+          button:hover {
+            background-color: red;
+            color: white;
+          }
         }
 
-        .input-row,
-        .input-group {
-          flex-basis: 45%;
-        }
+        .right {
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+          background-color: rgb(207, 178, 61);
+          padding: 5rem;
+          text-align: justify;
 
-        input {
-          width: 100%;
-          border: none;
-          border-bottom: 3px solid rgb(238, 104, 104);
-          outline: none;
-          padding: 10px;
-          margin-bottom: 1rem;
-          font-size: 1rem;
-        }
+          h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-family: "Abril Fatface", cursive;
+          }
 
-        label {
-          display: none;
-        }
+          tr {
+            color: white;
+            font-size: 1.3rem;
+          }
 
-        textarea {
-          width: 100%;
-          border: none;
-          border-bottom: 3px solid red;
-          outline: none;
-          padding: 10px;
-          margin-bottom: 0.5rem;
-          font-size: 1rem;
-        }
-
-        button {
-          width: 100px;
-          height: 30px;
-          border-radius: 2rem;
-          color: white;
-          background-color: red;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-
-        button:hover {
-          background-color: white;
-          color: black;
-        }
-      }
-
-      .contact-right {
-        width: 30vw;
-        height: 40vh;
-        padding: 40px;
-        background-color: rgb(237, 90, 90);
-        color: white;
-
-        h3 {
-          font-size: 1.5rem;
-        }
-
-        tr td:first-child {
-          padding-right: 10px;
-        }
-
-        tr td {
-          padding-top: 20px;
-          color: white;
-          font-weight: bold;
-          font-size: 1.3rem;
+          td:first-child {
+            padding-right: 1.5rem;
+          }
         }
       }
     }
   }
+
   //^contact end
 
   //!main closing brace
@@ -431,11 +426,11 @@ footer {
 
   .copyright {
     margin-left: 1em;
-    font-size: 1.5em;
+    font-size: 1em;
   }
 
   .icon {
-    font-size: 2em;
+    font-size: 1em;
 
     ul {
       li {
@@ -455,6 +450,17 @@ footer {
 }
 
 //& Media Query
+
+@media screen and (max-width: 1227px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
 
 @media screen and (max-width: 900px) {
   html,
